@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding:0px;
+    margin: 0px;
+    gap: 28px;
+}
+
+a {
+    color: white;
+}
+.nav-item {
+    margin: 0;
+}
+
+nav {
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+h4 {
+  margin: 0;
+  padding: 12px 0px 0px 0px;
+  margin-right: 320px;
+}
+
+/* Layout Containers  */
+.container {
+  width: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudoSite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listaJogos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  min-width: 450px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/*  Logo  */
+.logo {
+    position: fixed;
+    bottom: 28px;
+    right: 32px;
+    max-width: 150px;
+    width: auto;
+  }
+  
+
+.imgLogo {
+    width: 80px;
+    height: 80px;
+}
+
+/*  Jogo Card  */
+.jogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 310px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.jogo > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.jogo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.jogo h3 {
+  display: none;
+  position: absolute;
+  top: 550px;
+}
+
+.baixo > .jogo h3 {
+  position: absolute;
+  top: 820px;
+}
+
+.jogo:hover {
+  width: 380px;
+}
+
+.jogo:hover img {
+  opacity: 0.2;
+  border: 0.5px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+.jogo:hover h3 {
+  display: flex;
+  font-size: 14px;
+}
+
+/*  Content  */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+/*  Sobre o Desenvolvedor  */
+.sobreDesenvolvedor {
+  display: flex;
+  gap: 20px;
+}
+
+.sobreConteudo {
+  max-width: 60%;
+  border: 0.5px solid white;
+  padding: 24px;
+}
+
+/*  Stack Jogos  */
+.stackJogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 40%;
+  gap: 8px;
+}
+
+.stack {
+  display: flex;
+  gap: 8px;
+}
+
+/*  Footer  */
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
