@@ -9,44 +9,57 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 .navbar-nav {
-    display: flex;
+  display: flex;
 }
 
 .home {
-    display: flex;
-    width: 100%;
-    background-color: rgb(22, 22, 22);
-    padding: 14px;
-    margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  padding: 14px;
+  z-index: 999;
 }
 
+
 ul {
-    padding:0px;
-    margin: 0px;
-    gap: 28px;
+  padding: 0px;
+  margin: 0px;
+  gap: 14px;
 }
 
 a {
-    color: white;
+  color: white;
 }
+
 .nav-item {
-    margin: 0;
+  display: flex;
+  margin: 0;
+  height: 40px;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 nav {
-    width: 1080px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navHome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+.navHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 a {
@@ -90,28 +103,29 @@ h4 {
   min-width: 450px;
 }
 
+
 section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /*  Logo  */
 .logo {
-    position: fixed;
-    bottom: 28px;
-    right: 32px;
-    max-width: 150px;
-    width: auto;
-  }
-  
+  position: fixed;
+  bottom: 28px;
+  right: 32px;
+  max-width: 150px;
+  width: auto;
+}
+
 
 .imgLogo {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 /*  Jogo Card  */
@@ -126,12 +140,12 @@ section {
   cursor: pointer;
 }
 
-.jogo > a > img {
+.jogo>a>img {
   width: 100%;
   height: 100%;
 }
 
-.jogo > img {
+.jogo>img {
   width: 100%;
   height: 100%;
 }
@@ -139,12 +153,12 @@ section {
 .jogo h3 {
   display: none;
   position: absolute;
-  top: 550px;
+  top: 620px;
 }
 
-.baixo > .jogo h3 {
+.baixo>.jogo h3 {
   position: absolute;
-  top: 820px;
+  top: 860px;
 }
 
 .jogo:hover {
@@ -160,7 +174,7 @@ section {
 
 .jogo:hover h3 {
   display: flex;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 /*  Content  */
@@ -209,4 +223,150 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 40px;
+}
+
+h1,
+a {
+  color: #ffaf4d;
+  font-family: "Oranienbaum", Arial, sans-serif;
+}
+
+.nav-item:hover {
+  color: #d49240;
+  font-family: "Oranienbaum", Arial, sans-serif;
+  font-size: 18px;
+  background-color: rgb(67, 67, 67);
+  border-radius: 8px;
+}
+
+.intro-title {
+  font-size: 2.5rem;
+  color: #ff9933;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.intro-title span {
+  color: white;
+  background: linear-gradient(to right, #ff9933, #ff6600);
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+
+.intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+.intro-list li {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.intro-list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.intro-list li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.intro-list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.intro-list li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.intro-list li:nth-child(5) {
+  animation-delay: 1s;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.intro-section {
+  color: #f5f5f5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Animação da esquerda pra direita */
+@keyframes slideLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animação da direita pra esquerda */
+@keyframes slideRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.listaJogos {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+
+.listaJogos.animate-left {
+  animation: slideLeftToRight 1s ease forwards;
+}
+
+/* Quando visível: anima da direita */
+.listaJogos.animate-right {
+  animation: slideRightToLeft 1s ease forwards;
 }
