@@ -12,9 +12,8 @@
     rel="stylesheet">
   <title>Jogos Desenvolvidos</title>
 </head>
-
 <body>
-  <div class="home">
+  <header class="home">
     <div class="navHome">
       <nav>
         <h1>Jogos Imersão Alura</h1>
@@ -24,18 +23,17 @@
               <a class="nav-link" href="#home">Inicio<span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#btConteudoHome">Jogos</a>
+              <a class="nav-link" href="#containerJogos">Jogos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#btCompra">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-  </div>
-
-  <div class="container">
+  </header>
+  <div class="container" id="home">
     <sction class="conteudoSite">
       <section class="intro-section">
         <h1 class="intro-title">Jogos criados na imersão alura</h1>
@@ -52,7 +50,7 @@
           <li>❄️ <strong>Era do Gelo:</strong> Ajude o Sid a localizar o bebê perdido</li>
         </ul>
       </section>
-      <section class="containerJogos">
+      <section class="containerJogos" id="containerJogos">
         <h1>Jogos desenvolvidos</h1>
         <div class="listaJogos cima">
           <div class="jogo">
@@ -91,7 +89,7 @@
 
         </div>
       </section>
-      <section class="sobreDesenvolvedor">
+      <section  id="sobre">
         <div>
           <h1>Sobre o desenvolvedor</h1>
         </div>
@@ -106,18 +104,20 @@
             <p>🤝 Além disso, a imersão me conectou com outros <strong>desenvolvedores</strong> que também estão
               <strong>evoluindo na área</strong>, trocando experiências e <strong>compartilhando projetos</strong> 🚀
             </p>
-            <a href="mailto:erikaczbu@gmail.com">
-              <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white">
-            </a>
-            <a href="https://www.linkedin.com/in/erikaczanin">
-              <img
-                src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-            </a>
-            <a href="https://github.com/ErikaCZanin">
-              <img src="https://img.shields.io/badge/GitHub-E44C30?style=for-the-badge&logo=github&logoColor=white">
-            </a>
+            <div>
+              <a href="mailto:erikaczbu@gmail.com">
+                <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white">
+              </a>
+              <a href="https://www.linkedin.com/in/erikaczanin">
+                <img
+                  src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+              </a>
+              <a href="https://github.com/ErikaCZanin">
+                <img src="https://img.shields.io/badge/GitHub-E44C30?style=for-the-badge&logo=github&logoColor=white">
+              </a>
+            </div>
           </div>
-          <div class="stackJogos">
+          <aside class="stackJogos">
             <strong>⚡
               Stack com os jogos</strong>
             <br>
@@ -127,7 +127,7 @@
               <img
                 src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
             </div>
-          </div>
+          </aside>
         </div>
       </section>
       </section>
