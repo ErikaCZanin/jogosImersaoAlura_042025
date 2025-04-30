@@ -41,7 +41,7 @@ Lógica de combate com `Math.random`, `if` para comparação, **simulação de e
 </span>
 
 👾 **Encontre a Porta Certa - Monstros S.A.**  
-Uso de `Math.random`, estrutura de repetição `while`, **contador de energia**, entrada com `prompt` e sorteio de opções. 
+Uso de `Math.random`, estrutura de repetição `while`, **contador de energia**, entrada com `prompt` e sorteio de opções.        
 <span>
   [![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel&logoColor=white)](https://jogo-monstros-sa.vercel.app/)
 </span>
