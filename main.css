@@ -297,14 +297,10 @@ a {
   }
 }
 
-#containerJogos {
-  scroll-margin-top: 100px;
-}
-
+#containerJogos,
 #home {
   scroll-margin-top: 100px;
 }
-
 .intro-text {
   max-width: 800px;
   margin: 0 auto 40px;
@@ -423,6 +419,14 @@ p {
 }
 
 @media (max-width: 750px) {
+
+  #containerJogos {
+    scroll-margin-top: 190px;
+  }
+
+  #sobre {
+    scroll-margin-top: 190px;
+  }
 
   .btnList {
     display: flex;
